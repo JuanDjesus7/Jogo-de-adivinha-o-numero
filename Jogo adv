@@ -1,0 +1,34 @@
+alert("Seja bem vindo");
+let numeroMaximo = 5000; 
+let numeroSecreto = parseInt(Math.random() * numeroMaximo + 1); 
+console.log(numeroSecreto);
+let chute;
+let tentativa = 1; 
+
+    while(chute != numeroSecreto)
+    {
+        chute = prompt(`Escolha um numero entre 1 e ${numeroMaximo}`); 
+
+        if(chute == numeroSecreto){
+           break;
+        }
+        else {
+            
+        }
+        if (chute < numeroSecreto){
+            alert(`O numero secreto é Maior que ${chute}`);
+        }
+        else{
+            alert(`O numero secreto é Menor que ${chute}`);
+        }
+        tentativa++;
+    }
+    let palavraTentativas = tentativa > 1 ? "Tentativas" : "tentativa"; 
+    alert(`você acertou o nemuero é ${numeroSecreto} com ${tentativa} ${palavraTentativas}`);
+    
+//if (tentativa > 1){
+  //  alert(`você acertou o nemuero é ${numeroSecreto} com ${tentativa} tentativas`);
+//}
+//else{
+  //  alert(`você acertou o nemuero é ${numeroSecreto} com ${tentativa} tentativa`);
+//}
